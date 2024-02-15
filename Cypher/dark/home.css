@@ -1,0 +1,398 @@
+:root {
+  /* Color Variables */
+  --cy-font: "Urbanist", sans-serif;
+  --heading-font: "Urbanist", sans-serif;
+  --cy-text: #697585;
+  --cy-text-rgb: 105, 117, 133;
+  --cy-text2: #B3ADE1;
+  --cy-text2-rgb: 179, 173, 225;
+  --cy-grey: #B7B0B4;
+  --cy-grey-rgb: 183, 176, 180;
+  --cy-soft: #F1F2FD;
+  --cy-soft-rgb: 241, 242, 253;
+  --cy-soft2: #F6F5F5;
+  --cy-soft2-rgb: 246, 245, 245;
+  --cy-soft3: #E0E3FD;
+  --cy-soft3-rgb: 224, 227, 253;
+  --cy-soft4: #E4E4E4;
+  --cy-soft4-rgb: 228, 228, 228;
+  --cy-soft5: #F6F6F6;
+  --cy-soft5-rgb: 246, 246, 246;
+  --cy-base: #4F5DE4;
+  --cy-base-rgb: 79, 93, 228;
+  --cy-secondary: #F57005;
+  --cy-secondary-rgb: 245, 112, 5;
+  --cy-black: #2A254D;
+  --cy-black-rgb: 42, 37, 77;
+  --cy-black2: #000000;
+  --cy-black2-rgb: 0, 0, 0;
+  --cy-white: #ffffff;
+  --cy-white-rgb: 255, 255, 255;
+}
+
+/* Typography */
+textarea {
+  color: var(--cy-black, #2A254D);
+  font-family: var(--cy-font, "Urbanist", sans-serif);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+blockquote {
+  margin: 0 1.5em;
+}
+
+address {
+  margin: 0 0 1.5em;
+}
+
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", courier, monospace;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+}
+
+/* Body */
+body {
+  background: #fff;
+}
+
+/* Navigation */
+.navbar .container-fluid {
+  padding: 2px;
+  margin-right: 3px;
+  background-color: #fff; /* Add your desired background color */
+}
+
+/* Cursor */
+.custom-cursor__cursor {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  border: 1px solid var(--cy-base);
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 5px), -50%);
+  z-index: 999991;
+}
+
+.custom-cursor__cursor-two {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: var(--cy-base);
+  opacity: 0.3;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+  z-index: 999991;
+}
+
+.custom-cursor__hover {
+  background-color: var(--cy-base);
+  opacity: 0.4;
+}
+
+.custom-cursor__innerhover {
+  width: 25px;
+  height: 25px;
+  opacity: 0.4;
+}
+
+/* Footer */
+.has-fixed-footer,
+.has-fixed-footer body {
+  height: 100%;
+  overflow: unset;
+}
+
+.has-fixed-footer .page-wrapper {
+  min-height: 100%;
+  margin-bottom: -100px;
+}
+
+.has-fixed-footer .default.error-page,
+.has-fixed-footer .blog-page,
+.has-fixed-footer .blog-single,
+.has-fixed-footer .product-details,
+.has-fixed-footer .shop-one.product.news-sidebar,
+.has-fixed-footer .woocommerce-cart .woocommerce,
+.has-fixed-footer .woocommerce-checkout .woocommerce {
+  padding-bottom: 220px;
+}
+
+.has-fixed-footer .blog-details {
+  padding-bottom: 220px;
+}
+
+.has-fixed-footer .tutor-dashboard {
+  padding-bottom: 170px;
+}
+
+.has-fixed-footer .tutor-wrap.tutor-wrap-parent.tutor-full-width-student-profile,
+.has-fixed-footer .tutor-course-details-page {
+  padding: 100px;
+}
+
+.has-fixed-footer .default-footer .site-footer__bottom {
+  padding: 34.5px 0;
+}
+
+.has-fixed-footer .page-template-default.woocommerce-checkout .woocommerce {
+  padding-top: 0;
+  padding-bottom: 50px;
+}
+
+.has-fixed-footer .woocommerce-cart .woocommerce,
+.has-fixed-footer .woocommerce-checkout .woocommerce {
+  padding-top: 0;
+  margin-top: -15px;
+  margin-bottom: -27px;
+  padding-bottom: 0;
+}
+
+.has-fixed-footer .woocommerce-checkout .woocommerce {
+  margin-top: 0;
+  margin-bottom: -30px;
+}
+
+.has-fixed-footer .page-template-default.woocommerce-cart .woocommerce {
+  margin-bottom: -10px;
+}
+
+.has-fixed-footer .copyright {
+  padding: 37.5px 0;
+}
+
+hr {
+  background-color: #eceae0;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+  margin: 0 0 0.5em 3em;
+  padding-left: 1em;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+figure {
+  margin: 1em 0;
+}
+
+.logo-retina img {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -ms-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+  max-width: 100%;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+table > tbody > tr > td,
+table > tbody > tr > th,
+table > tfoot > tr > td,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > thead > tr > th {
+  padding: 8px;
+  vertical-align: middle;
+  border: 1px solid #eceae0;
+  border-top: 1px solid #eceae0;
+}
+
+table > tbody > tr > td,
+table > tbody > tr > th,
+table > tfoot > tr > td,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > thead > tr > th {
+  padding: 8px;
+  vertical-align: middle;
+  border: 1px solid #eceae0;
+  border-top: 1px solid #eceae0;
+}
+
+.sidebar__single .calendar_wrap .wp-calendar-table thead {
+  background-color: var(--cy-primary, #f1cf69);
+}
+
+.sidebar__single .calendar_wrap .wp-calendar-table thead th {
+  text-align: center;
+  line-height: 40px;
+  color: var(--cy-base, #ffffff);
+  font-weight: 600;
+  font-size: 18px;
+  padding-top: 4px;
+}
+
+.wp-block-calendar .wp-calendar-table caption {
+  padding-bottom: 0;
+  line-height: 1;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.wp-block-calendar .wp-calendar-nav {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wp-block-calendar .wp-calendar-nav a {
+  text-decoration: none;
+  line-height: 1;
+  color: var(--moniz-black, #1e1e22);
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 500ms ease;
+}
+
+.navbar .container-fluid {
+  padding: 2px;
+  margin-right: 3px;
+  background: transparent;
+}
+
+/* You can also use a more specific selector for the icon buttons
+.navbar .container-fluid button.icon-button {
+  text-align: center;
+  padding: 2px;
+  margin-right: 3px;
+}
+*/
+
+.custom-cursor__cursor {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  border: 1px solid var(--cy-base);
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(calc(-50% + 5px), -50%);
+  transform: translate(calc(-50% + 5px), -50%);
+  z-index: 999991;
+}
+
+/*--------------------------------------------------------------
+# Custom Cursor
+--------------------------------------------------------------*/
+.custom-cursor__cursor-two {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: var(--cy-base);
+  opacity: 0.3;
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  -webkit-transition: width 0.3s, height 0.3s, opacity 0.3s;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+  z-index: 999991;
+}
+
+.custom-cursor__hover {
+  background-color: var(--cy-base);
+  opacity: 0.4;
+}
+
+.custom-cursor__innerhover {
+  width: 25px;
+  height: 25px;
+  opacity: 0.4;
+}
+
+/*--------------------------------------------------------------
+# Navigations
+--------------------------------------------------------------*/
+.navbar .container-fluid{
+  position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <!-- Add any necessary CSS files or stylesheets here -->
+</head>
+<body class="page-template page-template-elementor_header_footer page page-id-1204 theme-cypher tutor-lms woocommerce-js custom-cursor woocommerce-active elementor-default elementor-template-full-width elementor-kit-6 elementor-page elementor-page-1204 e--ua-blink e--ua-chrome e--ua-webkit" data-elementor-device-mode="desktop" data-new-gr-c-s-check-loaded="14.1154.0" data-gr-ext-installed="">
+    <div class="custom-cursor__cursor" style="transform: translate3d(calc(-50% + 337px), calc(-50% + 145px), 0px);"></div>
+    <div class="custom-cursor__cursor-two" style="left: 337px; top: 145px;"></div>
+
+    <!-- Add your webpage content here -->
+    
+    <!-- Add any necessary JavaScript files or scripts here -->
+</body>
+</html>
