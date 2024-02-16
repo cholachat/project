@@ -1,7 +1,7 @@
 body {  
     margin: 0;
     padding: 0;  
-  background-color: #1d1d1d;
+  background-color: black;
 }
 * {
   box-sizing: border-box;
@@ -11,11 +11,13 @@ body {
   width: fit-content;
   height: fit-content;
   position: relative;
+  text-decoration: white;
 }
 .input-search{
   height: 50px;
   width: 30px;
   border-style: none;
+  color: white;
  
   letter-spacing: 2px;
   outline: none;
@@ -73,13 +75,14 @@ body {
 }
 
 .Home {
-  background-color: #080099a8;
+  background-color: transparent;
   border-bottom-right-radius: 25%;
   padding-bottom: 2%;
 }
 
 .Home .navbar{
   padding:0rem;
+  background-color: transparent;
 }
 .Home .log {
   background-color: white;
@@ -95,6 +98,8 @@ body {
   height:50px;
   width:80px;
   background: white;
+  color: white;
+  text-size-adjust: 6px;
 }
 
 
@@ -104,12 +109,15 @@ body {
 
 
 .Home .navbar-nav{
-  background-color: #ffffff2a;
+  background-color: transparent;
   border-radius: 50px;
   padding:0 20px;
   margin: 0 auto;
       display: flex;
       justify-content: center;
+      font-size: 1.5em;
+      width: 60%;
+      font-weight: 600;
   
 }
 .Home .navbar-light .navbar-nav .nav-link {
@@ -1111,3 +1119,57 @@ padding-top: 4%;
   }
 }
 
+.dark_2_sec .flex-container{
+  background-color: rgb(39, 39, 51);
+}
+
+.dark_2_sec .flex-container .container .row .col .card {
+  background-color: transparent;
+  display: inline-block;
+  border-bottom-right-radius: 15px;
+  /* add pseudo-element  */
+  padding: 15px;
+  margin: 3px;
+  transition: all 500ms linear;
+  transition-delay: 0.1s;
+  transform: scale(1);
+}
+
+.dark_2_sec .flex-container .container .row .col .card .color {
+  background-color: rgb(238, 105, 16);
+  border-radius: 25%;
+  height: 76px;
+  width: 76px;
+  font-size: 38px;
+  line-height: 1;
+  position: relative;
+  z-index: 3;
+  margin: 0 0 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 500ms ease;
+
+}
+
+.dark_2_sec .card-title,
+.dark_2_sec .card-text {
+  color: white;
+}
+
+.dark_2_sec .flex-container .container .row .col .card .color :hover{
+  background-color: rgb(70, 70, 185);
+}
+
+.dark_2_sec .card {
+  position: relative; /* Ensure the card is positioned relatively */
+  overflow: hidden;
+  border: 1px solid;
+}
+
+.dark_2_sec .card .right_image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1; /* Ensure the image appears above other content */
+}
