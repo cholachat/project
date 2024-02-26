@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@800&family=Readex+Pro:wght@600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
 
 </head>
 
@@ -32,44 +34,81 @@
                 <ul class="navbar-nav midd">
                   <center> <input class=" search form-control mr-sm-2 " type="text" placeholder="Search" aria-label="Search"></center> 
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html"><b>Home</b></a>
+                        <a class="nav-link" href="index.html"><b><h3>Home</h3></b></a>
+                        <!--<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">About</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>    -->
+                    </li>
+                    <!--
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#page" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#pages"><b><h1>pages</h1></b>
+                            <span class="sr-only">(current)</span></a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">About</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                    </li>
+                    -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="dropdown-label"><h3>Pages</h3></span>
+                            
+                            <span class="sr-only">(current)</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">About</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link"  href="courses.html"><b><h3>Course</h3></b></a> <!-- href="#https://harishsharma.graphy.com/s/store"-->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#pages"><b>pages</b></a>
+                        <a class="nav-link" href="blogs.html"><b><h3>Blogs</h3></b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="courses.html"><b>Course</b></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blogs.html"><b>Blogs</b></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#shop"><b>Shop</b></a>
+                        <a class="nav-link" href="#shop"><b><h3>Shop</h3></b></a>
                     </li>
                     <!--<li class="nav-item">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact"><b>Contact</b></a>
+                        <a class="nav-link" href="#contact"><b><h3>Contact</h3></b></a>
                     </li>
-                    
-                    
                 </ul>
-                <li class="seicon">
-                    <div class=" out search-box ">
-                        <button class="btn-search"><i class="fa fa-search"></i></button>
-                        <input type="text" class="input-search" placeholder="Search...">
-                    </div>
-                </li>
-
-                <button class="btn my-sm-0 log " type="submit">Log In
-                    <a href="#" ></a>
-                </button>
+                <!--<div class=".icon_sec">  -->
+                    <li class="seicon">
+                        <div class=" out search-box ">
+                            <button class="btn-search"><i class="fa fa-search"></i></button>
+                            <input type="text" class="input-search" placeholder="Search...">
+                        </div>
+                    </li>
+    
+                    <li>
+                        <a href="#login" class="nav-item">
+                            <span class="material-symbols-outlined">
+                                login
+                                </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item">
+                            <button type="button" class="btn btn-primary"> <b>Get in touch</b> </button>
+                        </a>
+                    </li>
+                </div>
             </div>
         </nav>
 
 
-
+        
+        <script>
+            new WOW().init();
+        </script>
+        <script src="main.js"></script>
 
 
 
@@ -119,7 +158,7 @@
                 <h3 class="animated fadeInDown slow delay-0.5s">Unlock the power of innovation at Cipher Academy, where we delve into the intriguing world of hacking across diverse sectors.</h3>
 
                 <a href="#" >
-                    <button class="btn  my-sm-0 start animated fadeInDown slow delay-0.5s" type="submit">Talk Now
+                    <button class="btn_1  my-sm-0 start animated fadeInDown slow delay-0.5s" type="submit">Talk Now
                     </button>
                 </a>
                 <a href="courses.html" >
@@ -143,16 +182,16 @@
             <div class="container text-center">
                 <div class="row">
                   <div class="col">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 15rem;">
                         <div class="color">
                             <img src="b.png" class="card-img-top" alt="inner_icon">
                         </div>
                         <!--<img src="..." class="card-img-top" alt="..."> -->
             
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
+                          <h5 class="card-title">Exclusive Coach</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <a href="#" class="btn btn-primary">Read More ></a>
                           <div class="right_image">
                             <img src="the.png" style="width: 50px;"> <!-- Adjust image width as needed -->
                           </div>
@@ -160,32 +199,14 @@
                     </div>
                   </div>
                   <div class="col">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 15rem;">
                         <div class="color">
                             <img src="b.png" class="card-img-top" alt="inner_icon">
                         </div>
                         <!--<img src="..." class="card-img-top" alt="..."> -->
             
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                          <div class="right_image">
-                            <img src="the.png" style="width: 50px;"> <!-- Adjust image width as needed -->
-                          </div>
-                        </div>
-                    </div>
-            
-                  </div>
-                  <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <div class="color">
-                            <img src="b.png" class="card-img-top" alt="inner_icon">
-                        </div>
-                        <!--<img src="..." class="card-img-top" alt="..."> -->
-            
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
+                          <h5 class="card-title">Creative Minds</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                           <a href="#" class="btn btn-primary">Go somewhere</a>
                           <div class="right_image">
@@ -196,14 +217,32 @@
             
                   </div>
                   <div class="col">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 15rem;">
                         <div class="color">
                             <img src="b.png" class="card-img-top" alt="inner_icon">
                         </div>
                         <!--<img src="..." class="card-img-top" alt="..."> -->
             
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
+                          <h5 class="card-title">Video Tutorials</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <div class="right_image">
+                            <img src="the.png" style="width: 50px;"> <!-- Adjust image width as needed -->
+                          </div>
+                        </div>
+                    </div>
+            
+                  </div>
+                  <div class="col">
+                    <div class="card" style="width: 15rem;">
+                        <div class="color">
+                            <img src="b.png" class="card-img-top" alt="inner_icon">
+                        </div>
+                        <!--<img src="..." class="card-img-top" alt="..."> -->
+            
+                        <div class="card-body">
+                          <h5 class="card-title">Worlds Record</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                           <a href="#" class="btn btn-primary">Go somewhere</a>
                           <div class="right_image">
@@ -557,5 +596,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="main.js"></script>
+<script src="cur.js"></script>
 
 </html>
