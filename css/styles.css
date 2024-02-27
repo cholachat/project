@@ -81,6 +81,7 @@ body {
     text-decoration: underline;
     font-weight: bolder;
   }
+  /*
   .Home {
    background-image: url("../images/Rectangle\ 351.png");
    position: absolute;
@@ -88,7 +89,30 @@ body {
    background-repeat: no-repeat;
    max-height: 730px;
    background-size: auto;
-    padding-bottom: 7px;
+  padding-bottom: 7px;
+  } */
+
+  .Home {
+    position: relative;
+    background-repeat: no-repeat;
+  }
+  
+  .Home::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Rectangle 351.png');
+    opacity: 0.3; /* Adjust the opacity value as needed */
+    z-index: -1; /* Ensure the pseudo-element stays behind the content */
+    background-repeat: no-repeat;
+  }
+  
+
+  .Home .background-image{
+    opacity: 0.2;
   }
   
   .Home .log {
@@ -501,3 +525,5 @@ color: rgba(255, 255, 255, 0.889);
         font-size: 1.5rem;
       }
     }
+
+    

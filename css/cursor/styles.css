@@ -1,0 +1,33 @@
+body {
+    cursor: none; /* Hide default cursor */
+    overflow: hidden; /* Ensure cursor shadow stays within viewport */
+  }
+  
+  .cursor {
+    position: fixed;
+    top: -10px; /* Adjust as needed */
+    left: -10px; /* Adjust as needed */
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    border-radius: 50%;
+    background-color: rgba(250, 2, 2, 0.247); /* White color with opacity 0.5 */
+    pointer-events: none;
+    z-index: 9999; /* Ensure cursor stays above other elements */
+    mix-blend-mode: screen; /* Blend with the background */
+    transition: transform 0.1s ease; /* Smooth transition */
+  }
+  
+  .cursor :hover {
+    position: fixed;
+    top: -10px; /* Adjust as needed */
+    left: -10px; /* Adjust as needed */
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    border-radius: 50%;
+    background-color: rgba(8, 8, 8, 0.247); /* White color with opacity 0.5 */
+    pointer-events: none;
+    z-index: 9999; /* Ensure cursor stays above other elements */
+    mix-blend-mode: screen; /* Blend with the background */
+    border: 2px burlywood;
+    transition: transform 0.1s ease; /* Smooth transition */
+  }
