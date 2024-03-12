@@ -6,5 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('mousemove', function(event) {
       cursor.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
     });
+
+     // Set a lower z-index for the custom cursor
+  cursor.style.zIndex = '1';
+  
   });
   
